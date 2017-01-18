@@ -8,7 +8,6 @@ $(function () {
     type: 'GET',
     onSelect: function (suggestion) {
         console.log( suggestion.value + ', data :' + suggestion.data);
-        //	window.location.href='the_link_to_go_to.html';
     }
 });
 
