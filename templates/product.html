@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% load staticfiles %}
+
+{% block head_injections %}
+        {{ block.super }}  
+<style>
+.w65{
+width: 65px;
+}
+.top10{
+margin-top:10px;
+}
+</style>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-sm-5">
+        <img src="{{object.image.url}}">
+    </div>
+    
+    <div class="col-sm-4">
+        <h1 class="product-title orange">{{object.title}}</h1>
+        <small class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </small>
+        <div class="product-information"><!--/product-information-->
+            <span>
+                    <span class="price-before-discount"> ₹ 430.00</span>
+                    <h3 class="actual-price"> ₹ 359.00</h3>
+                </span>
+                
+                {{ object.description|safe }}
+                <ul>
+                <li>Availability:<span class='text-success'>In stock </span></li>
+                <li>Amount in stock: <span class='text-success'>5</span></li>
+                </ul>
+                
+
+            <div class="form-group has-feedback has-feedback-left">
+                <label class="control-label inline">Delivery Pincode:</label>
+                <i class="glyphicon glyphicon-map-marker form-control-feedback pull-left"></i>
+                <input type="text" class="form-control" placeholder="enter pincode to estimate stock & delivery time" />
+                
+            </div>
+            
+                
+       </div>
+    </div>
+    
+    <div class="col-sm-3">
+                    
+                    <label class="">Quantity:</label>
+                    <input min="1" value="1" type="number" class="form-control w65" >
+                    </div>
+                    <button type="button" class="btn btn-primary btn-md top10">
+                       <i class="fa fa-shopping-cart"></i>
+                        Add to cart
+                     </button>
+                     
+                    <button type="button" class="btn btn-primary btn-md top10">
+                       <i class="fa fa-play"></i>
+                        Buy now
+                     </button>
+                   </div>
+                   
+</div>
+</div>
+{% endblock %}
+
+
+
+{% block extrascripts %}
+{% endblock %}
+
+
+
+
+

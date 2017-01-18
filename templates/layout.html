@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head_injections %}
+        {{ block.super }}        
+        <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}" />
+        <link rel="stylesheet" type="text/css" href="{% static "css/autocomplete.css" %}" />
+{% endblock %}
+
+{% block layout %}
+    
+        <div class="page-header">
+            <div class="row">
+              <a href=" http://knowpapa.com/haystack-elasticsearch/"><div class="col-md-2 col-md-offset-1">knowpapa.com </div> </a>
+              {% include "partials/search_form.html" %}
+            </div>
+        </div>
+    
+     {% block content_wrapper %}
+            <div class="container-fluid page">
+                <div class="page_inner">
+                    <div class="content">
+                        <div id="content_inner">
+                            {% block content %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {% endblock %}
+{% endblock %}
+
+{% block footer_injections %}
+    {{ block.super }}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.autocomplete.js' %}"></script>
+    <script src="{% static 'js/our_search_code.js' %}"></script>
+{% endblock %}
+

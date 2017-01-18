@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+    <head>
+        <title> Haystack ElasticSearch Facet Autocomplete Search Tutorial   </title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" href="{% static "favicon.ico" %}" />
+        {% block head_injections %} {% endblock %}
+    </head>
+    <body>
+        {# Main content goes in this 'layout' block #}
+        {% block layout %}{% endblock %}
+
+        {% block footer_injections %}
+            <script src="{% static 'js/bootstrap.js' %}"></script>
+	{% endblock %}    
+    </body>
+</html>
