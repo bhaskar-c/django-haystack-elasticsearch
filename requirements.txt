@@ -3,4 +3,4 @@ django-haystack==2.5.1
 elasticsearch==5.0.1
 olefile==0.44
 Pillow==4.0.0
-urllib3==1.19.1
+urllib3>=1.23
