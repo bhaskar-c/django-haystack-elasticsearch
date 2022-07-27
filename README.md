@@ -11,7 +11,7 @@ Code accompanying Django Haystack + Elasticsearch + Autocomplete + Faceting Demo
 
 1) Download and Unzip the files
 
-2) Install Elasticsearch and start the server. (Details in the tutorial http://knowpapa.com/haystack-elasticsearch/)
+2) Install Elasticsearch and start the server. 
 
 3) create a virtualenv
     
