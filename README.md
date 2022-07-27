@@ -1,7 +1,6 @@
 # Django Haystack + Elasticsearch + Autocomplete + Faceting Tutorial
 
-Code accompanying Django Haystack + Elasticsearch + Autocomplete + Faceting Tutorial posted on 
-http://knowpapa.com/haystack-elasticsearch/
+Code accompanying Django Haystack + Elasticsearch + Autocomplete + Faceting Demo
 
 ![Django Haystack + Elasticsearch + Autocomplete + Faceting Tutorial](/searchdemo.png?raw=true "")
 
